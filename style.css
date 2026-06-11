@@ -39,7 +39,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
   background: var(--soft-white);
   color: var(--text);
   overflow-x: hidden;
