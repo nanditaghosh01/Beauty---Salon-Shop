@@ -636,3 +636,245 @@ body.hovering #cursor-ring { width: 56px; height: 56px; opacity: 0.3; }
   .contact-map { height: 280px; }
   .booking-form { padding: 1.8rem 1.2rem; }
 }
+/* ======================================================
+   PREMIUM TYPOGRAPHY UPGRADE
+   Add at END of style.css
+====================================================== */
+
+/* Smooth rendering */
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Logo */
+.logo-script{
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.logo-sans{
+    font-weight: 600;
+    letter-spacing: .25em;
+}
+
+/* Hero */
+
+.hero-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.8rem, 9vw, 7rem);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-shadow:
+        0 10px 40px rgba(244,114,182,.12);
+    transition: all .45s ease;
+}
+
+.hero-title:hover{
+    transform: translateY(-6px);
+    letter-spacing: .02em;
+    text-shadow:
+        0 0 20px rgba(244,114,182,.35),
+        0 0 50px rgba(192,132,252,.25);
+}
+
+.hero-title em{
+    font-style: italic;
+    font-weight: 800;
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--pink),
+    var(--lavender),
+    var(--rose));
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-sub{
+    font-size: clamp(1rem,1.5vw,1.25rem);
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.9;
+}
+
+/* Section Headings */
+
+.section-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.7rem,5vw,4.7rem);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    transition: .4s ease;
+}
+
+.section-title:hover{
+    transform: translateY(-4px);
+    letter-spacing: .02em;
+}
+
+.section-title em{
+    color: var(--pink);
+    font-weight: 800;
+}
+
+.section-eyebrow{
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .3em;
+}
+
+/* Paragraphs */
+
+.section-sub,
+.about-desc,
+.service-card p,
+.testi-card p,
+.team-exp{
+    font-size: 1.02rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.9;
+}
+
+/* Navbar */
+
+.nav-link{
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    transform: translateY(-2px);
+}
+
+/* Service Cards */
+
+.service-card h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    font-style: italic;
+    transition: .4s ease;
+}
+
+.service-card:hover h3{
+    color: var(--pink);
+    transform: scale(1.05);
+}
+
+/* Team */
+
+.team-card h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    transition: .4s ease;
+}
+
+.team-card:hover h3{
+    color: var(--pink);
+    transform: scale(1.05);
+}
+
+/* Pricing */
+
+.pricing-card h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-glass,
+.btn-glass-hero,
+.btn-glass-sm,
+.btn-glass-full{
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: .05em;
+}
+
+/* Interactive Text Glow */
+
+.hero-title,
+.section-title,
+.service-card h3,
+.team-card h3,
+.pricing-card h3{
+    cursor: pointer;
+}
+
+/* Better Selection */
+
+::selection{
+    background: rgba(244,114,182,.35);
+}
+
+/* Smooth Hover */
+
+a,
+button,
+.service-card,
+.team-card,
+.pricing-card{
+    transition: all .35s ease;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .hero-title{
+        font-size:3.6rem;
+        line-height:.95;
+    }
+
+    .section-title{
+        font-size:2.5rem;
+    }
+
+    .hero-sub,
+    .about-desc,
+    .section-sub{
+        font-size:1rem;
+    }
+
+    .nav-link{
+        font-size:1rem;
+    }
+
+    .service-card h3,
+    .team-card h3,
+    .pricing-card h3{
+        font-size:1.35rem;
+    }
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+    .hero-title{
+        font-size:3rem;
+    }
+
+    .section-title{
+        font-size:2.1rem;
+    }
+
+}
