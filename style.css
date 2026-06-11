@@ -923,4 +923,11 @@ button,
         transform: none !important;
         visibility: visible !important;
     }
+}/* Dark Mode Logo Fix */
+[data-theme="dark"] .logo-script{
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .logo-sans{
+    color: #ffffff !important;
 }
