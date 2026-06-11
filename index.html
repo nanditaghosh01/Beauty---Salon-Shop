@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nandita Beauty Studio – Luxury beauty treatments, premium skincare, expert makeup and professional salon services." />
+  <title>Nandita Beauty Studio | Luxury Salon & Beauty</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ PRELOADER ░░ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Nandita</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <p class="preloader-sub">Beauty Studio</p>
+    </div>
+  </div>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ░░ SCROLL PROGRESS ░░ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-script">Nandita</span>
+        <span class="logo-sans">Beauty Studio</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <a href="#booking" class="btn-glass btn-nav-book">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="aurora"></div>
+    </div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal>Luxury Beauty Since 2010</p>
+      <h1 class="hero-title" data-reveal>
+        Beauty Beyond<br /><em>Imagination</em>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        Experience luxury beauty treatments, premium skincare, expert makeup,<br />and professional salon services tailored just for you.
+      </p>
+      <div class="hero-btns" data-reveal>
+        <a href="#booking" class="btn-primary magnetic">Book Appointment</a>
+        <a href="#services" class="btn-glass-hero magnetic">Explore Services</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <!-- floating glass shapes -->
+    <div class="float-shape fs1"></div>
+    <div class="float-shape fs2"></div>
+    <div class="float-shape fs3"></div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-aos="fade-right">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">
+              <i class="fa-solid fa-spa"></i>
+            </div>
+            <div class="about-badge glass-card">
+              <span class="badge-num">15+</span>
+              <span class="badge-label">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Where Beauty<br /><em>Meets Artistry</em></h2>
+          <p class="about-desc">Founded in 2010, Nandita Beauty Studio was born from a passion for celebrating every woman's natural radiance. Our expert artists blend time-honoured techniques with cutting-edge treatments to craft experiences that are as unique as you are.</p>
+          <p class="about-desc">Our mission is simple: to make you feel extraordinary every single visit. We envision a world where luxury beauty is accessible, personalised, and deeply transformative.</p>
+          <div class="about-stats">
+            <div class="stat glass-card">
+              <span class="stat-num" data-count="3500">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat glass-card">
+              <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat glass-card">
+              <span class="stat-num" data-count="28">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Expert Artists</span>
+            </div>
+            <div class="stat glass-card">
+              <span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Awards Won</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SERVICES ░░ -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Premium <em>Services</em></h2>
+        <p class="section-sub">Each service is crafted with precision, luxury products, and genuine care.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fa-solid fa-ring"></i></div>
+          <h3>Bridal Makeup</h3>
+          <p>Flawless bridal looks that last all day — from traditional to contemporary.</p>
+          <div class="service-price">From ₹4,999</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+          <h3>Hair Styling</h3>
+          <p>Precision cuts, blowouts, and signature styles for every occasion.</p>
+          <div class="service-price">From ₹799</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Hair Coloring</h3>
+          <p>Balayage, highlights, global color, and vivid fashion shades.</p>
+          <div class="service-price">From ₹1,499</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+          <h3>Facial Treatment</h3>
+          <p>Deep cleanse, hydration, and anti-aging facials for luminous skin.</p>
+          <div class="service-price">From ₹1,199</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="service-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+          <h3>Skin Care</h3>
+          <p>Personalised regimes and medical-grade treatments for every skin type.</p>
+          <div class="service-price">From ₹999</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="service-icon"><i class="fa-solid fa-paintbrush"></i></div>
+          <h3>Nail Art</h3>
+          <p>Gel manis, intricate nail art, and long-lasting shellac finishes.</p>
+          <div class="service-price">From ₹499</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+          <h3>Spa Therapy</h3>
+          <p>Full-body relaxation rituals with aromatic oils and hot stone therapy.</p>
+          <div class="service-price">From ₹2,499</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3>Eyebrow Styling</h3>
+          <p>Threading, tinting, lamination, and microblading for perfect arches.</p>
+          <div class="service-price">From ₹349</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="service-icon"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Hair Spa</h3>
+          <p>Deep conditioning, scalp treatments, and moisture-rich rituals.</p>
+          <div class="service-price">From ₹899</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+        <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Keratin Treatment</h3>
+          <p>Salon-smooth, frizz-free hair for up to 5 months of effortless beauty.</p>
+          <div class="service-price">From ₹2,999</div>
+          <a href="#booking" class="btn-glass-sm">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ GALLERY ░░ -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Our Portfolio</p>
+        <h2 class="section-title">Studio <em>Gallery</em></h2>
+      </div>
+      <div class="gallery-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="makeup">Makeup</button>
+        <button class="filter-btn" data-filter="hair">Hair</button>
+        <button class="filter-btn" data-filter="nails">Nails</button>
+        <button class="filter-btn" data-filter="facial">Facial</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="bridal" data-aos="zoom-in">
+          <div class="gallery-placeholder gi-tall"><i class="fa-solid fa-ring"></i><span>Bridal Look</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-category="makeup" data-aos="zoom-in" data-aos-delay="50">
+          <div class="gallery-placeholder"><i class="fa-solid fa-star"></i><span>Glam Makeup</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-category="hair" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-placeholder gi-tall"><i class="fa-solid fa-scissors"></i><span>Hair Styling</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-category="nails" data-aos="zoom-in">
+          <div class="gallery-placeholder"><i class="fa-solid fa-paintbrush"></i><span>Nail Art</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-category="facial" data-aos="zoom-in" data-aos-delay="50">
+          <div class="gallery-placeholder gi-tall"><i class="fa-solid fa-face-smile-beam"></i><span>Facial Glow</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-category="hair" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-placeholder"><i class="fa-solid fa-palette"></i><span>Balayage</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-category="bridal" data-aos="zoom-in">
+          <div class="gallery-placeholder"><i class="fa-solid fa-heart"></i><span>Bridal Glow</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item" data-category="makeup" data-aos="zoom-in" data-aos-delay="50">
+          <div class="gallery-placeholder gi-tall"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Party Glam</span></div>
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TEAM ░░ -->
+  <section id="team" class="section team">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Meet The Artists</p>
+        <h2 class="section-title">Expert <em>Team</em></h2>
+        <p class="section-sub">Passionate professionals dedicated to making you shine.</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card glass-card" data-aos="fade-up">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder"><i class="fa-solid fa-user-tie"></i></div>
+          </div>
+          <div class="team-info">
+            <h3>Nandita Ghosh</h3>
+            <p class="team-role">Founder & Master Artist</p>
+            <p class="team-exp">15+ Years Experience</p>
+            <div class="team-social">
+              <a href="https://linkedin.com/in/nanditaghosh" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/nanditaghosh" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="team-info">
+            <h3>Priya Sharma</h3>
+            <p class="team-role">Senior Bridal Specialist</p>
+            <p class="team-exp">10+ Years Experience</p>
+            <div class="team-social">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="team-info">
+            <h3>Nikita Bose</h3>
+            <p class="team-role">Hair Color Expert</p>
+            <p class="team-exp">8+ Years Experience</p>
+            <div class="team-social">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="team-info">
+            <h3>Meera Chowdhury</h3>
+            <p class="team-role">Skin Care Therapist</p>
+            <p class="team-exp">7+ Years Experience</p>
+            <div class="team-social">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TESTIMONIALS ░░ -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Client Love</p>
+        <h2 class="section-title">What They <em>Say</em></h2>
+      </div>
+      <div class="swiper testimonial-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>"Nandita is an absolute magician. My bridal look was everything I dreamed of and more. Every guest was stunned. I felt like royalty."</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><i class="fa-solid fa-user"></i></div>
+                <div><strong>Ritika Sen</strong><span>Bride, 2024</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>"The keratin treatment transformed my frizzy hair completely. Six weeks later and it still looks salon-fresh. The team is so warm and professional."</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><i class="fa-solid fa-user"></i></div>
+                <div><strong>Anjali Mehta</strong><span>Regular Client</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>"I've been coming here for three years. The facial treatments have completely changed my skin. Clean, glowing, and radiant every single time."</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><i class="fa-solid fa-user"></i></div>
+                <div><strong>Sunita Das</strong><span>Loyal Client</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>"The nail art team is insanely talented. I described my vision and they created something even more beautiful than I imagined. Highly recommend!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><i class="fa-solid fa-user"></i></div>
+                <div><strong>Pooja Bose</strong><span>Nail Art Client</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PRICING ░░ -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Transparent Value</p>
+        <h2 class="section-title">Luxury <em>Packages</em></h2>
+        <p class="section-sub">Thoughtfully curated packages for every occasion.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card glass-card" data-aos="fade-up">
+          <div class="pricing-badge">Starter</div>
+          <h3>Basic Beauty Care</h3>
+          <div class="pricing-amount">₹1,999<span>/session</span></div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Basic Facial Cleanse</li>
+            <li><i class="fa-solid fa-check"></i> Hair Wash & Blow Dry</li>
+            <li><i class="fa-solid fa-check"></i> Eyebrow Threading</li>
+            <li><i class="fa-solid fa-check"></i> Basic Manicure</li>
+            <li><i class="fa-solid fa-xmark dim"></i> Nail Art Design</li>
+            <li><i class="fa-solid fa-xmark dim"></i> Skin Treatment</li>
+          </ul>
+          <a href="#booking" class="btn-glass-full">Book Session</a>
+        </div>
+
+        <div class="pricing-card glass-card popular" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-badge popular-badge">Most Popular</div>
+          <h3>Premium Beauty Care</h3>
+          <div class="pricing-amount">₹4,999<span>/session</span></div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Advanced Facial Treatment</li>
+            <li><i class="fa-solid fa-check"></i> Hair Styling + Color</li>
+            <li><i class="fa-solid fa-check"></i> Eyebrow Tinting & Shape</li>
+            <li><i class="fa-solid fa-check"></i> Gel Manicure + Pedicure</li>
+            <li><i class="fa-solid fa-check"></i> Nail Art Design</li>
+            <li><i class="fa-solid fa-check"></i> Mini Spa Therapy</li>
+          </ul>
+          <a href="#booking" class="btn-primary">Book Session</a>
+        </div>
+
+        <div class="pricing-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-badge">Premium</div>
+          <h3>Bridal Package</h3>
+          <div class="pricing-amount">₹24,999<span>/occasion</span></div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Bridal Makeup Trial + Day</li>
+            <li><i class="fa-solid fa-check"></i> Saree/Lehenga Draping</li>
+            <li><i class="fa-solid fa-check"></i> Bridal Hair Styling</li>
+            <li><i class="fa-solid fa-check"></i> Pre-Bridal Skin Package</li>
+            <li><i class="fa-solid fa-check"></i> Full Spa Day</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Artist</li>
+          </ul>
+          <a href="#booking" class="btn-glass-full">Book Session</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ BOOKING ░░ -->
+  <section id="booking" class="section booking">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Reserve Your Spot</p>
+        <h2 class="section-title">Book an <em>Appointment</em></h2>
+        <p class="section-sub">Fill in the form and we'll confirm within 24 hours.</p>
+      </div>
+      <div class="booking-wrap" data-aos="fade-up">
+        <form class="booking-form glass-card" id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="bName" required placeholder=" " />
+              <label for="bName">Full Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="bEmail" required placeholder=" " />
+              <label for="bEmail">Email Address</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="tel" id="bPhone" required placeholder=" " />
+              <label for="bPhone">Phone Number</label>
+            </div>
+            <div class="form-group">
+              <select id="bService" required>
+                <option value="" disabled selected></option>
+                <option>Bridal Makeup</option>
+                <option>Hair Styling</option>
+                <option>Hair Coloring</option>
+                <option>Facial Treatment</option>
+                <option>Skin Care</option>
+                <option>Nail Art</option>
+                <option>Spa Therapy</option>
+                <option>Eyebrow Styling</option>
+                <option>Hair Spa</option>
+                <option>Keratin Treatment</option>
+              </select>
+              <label for="bService">Select Service</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="date" id="bDate" required placeholder=" " />
+              <label for="bDate">Preferred Date</label>
+            </div>
+            <div class="form-group">
+              <input type="time" id="bTime" required placeholder=" " />
+              <label for="bTime">Preferred Time</label>
+            </div>
+          </div>
+          <div class="form-group full">
+            <textarea id="bMsg" rows="4" placeholder=" "></textarea>
+            <label for="bMsg">Additional Message</label>
+          </div>
+          <button type="submit" class="btn-primary full-btn magnetic">Confirm Appointment</button>
+          <p class="form-success" id="formSuccess">🌸 Appointment request sent! We'll be in touch soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Find <em>Us</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item glass-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address</strong>
+              <p>12 Rose Garden Lane, Kolkata, West Bengal – 700001</p>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 70630 19482</p>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>hello@nanditabeautystudio.com</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" target="_blank" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="contact-map glass-card" data-aos="fade-left">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.5338889929!2d88.07426!3d22.5355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1718000000000"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Studio Location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer id="footer" class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-script">Nandita</span>
+            <span class="logo-sans">Beauty Studio</span>
+          </a>
+          <p>Crafting beauty experiences that transcend the ordinary. Your glow is our art.</p>
+          <div class="footer-social">
+            <a href="#" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Bridal Makeup</a></li>
+            <li><a href="#services">Hair Styling</a></li>
+            <li><a href="#services">Skin Care</a></li>
+            <li><a href="#services">Nail Art</a></li>
+            <li><a href="#services">Spa Therapy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Get beauty tips and exclusive offers.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email" aria-label="Newsletter email" />
+            <button class="btn-primary" aria-label="Subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom glass-card">
+        <p>© 2026 <a href="#" target="_blank">Nandita Ghosh</a>. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com/nanditaghosh01" target="_blank"><i class="fa-brands fa-github"></i> nanditaghosh</a>
+          <a href="https://www.linkedin.com/in/nandita-ghosh-828a96327" target="_blank"><i class="fa-brands fa-linkedin-in"></i> nanditaghosh</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ░░ BACK TO TOP ░░ -->
+  <button id="backToTop" class="btn-glass back-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
